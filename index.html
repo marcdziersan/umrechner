@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zahlenumrechnungstool</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Zahlenumrechnungstool</h1>
+        <div class="input-group">
+            <label for="decimal">Dezimal:</label>
+            <input type="number" id="decimal" value="10" oninput="updateValues('decimal')" onkeydown="handleKeyDown(event)">
+        </div>
+        <div class="input-group">
+            <label for="binary">Binär:</label>
+            <input type="text" id="binary" value="1010" oninput="updateValues('binary')" onkeydown="handleKeyDown(event)">
+        </div>
+        <div class="input-group">
+            <label for="octal">Oktal:</label>
+            <input type="text" id="octal" value="12" oninput="updateValues('octal')" onkeydown="handleKeyDown(event)">
+        </div>
+        <div class="input-group">
+            <label for="hex">Hexadezimal:</label>
+            <input type="text" id="hex" value="A" oninput="updateValues('hex')" onkeydown="handleKeyDown(event)">
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
